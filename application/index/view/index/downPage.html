@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>站点模板下载程序</title>
+	<link rel="stylesheet" href="__CSS__/global.css?v={$gv}">
+	<link rel="stylesheet" href="__CSS__/index_index.css?v={$gv}">
+	<script src="__JS__/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+<form target="_blank" method="post" action="{:url('index/index/doDownPage')}">
+	<table class="form_table">
+		<tr>
+			<th>网址</th>
+			<td>
+				<input type="text" name="url" value="http://www.17happy.cn/">
+			</td>
+		</tr>
+		<tr>
+			<th>html文件模板存储路径（包含文件名）</th>
+			<td>
+				<input type="text" name="html_path" value="/index.html">
+			</td>
+		</tr>
+		<tr>
+			<th>css文件存储目录路径（不包含文件名）</th>
+			<td>
+				<input type="text" name="css_dir" value="/public/css">
+			</td>
+		</tr>
+		<tr>
+			<th>js文件存储目录路径（不包含文件名）</th>
+			<td>
+				<input type="text" name="js_dir" value="/public/js">
+			</td>
+		</tr>
+		<tr>
+			<th>css图片文件下载目录路径</th>
+			<td>
+				<input type="text" name="css_image_dir" value="/public/images">
+			</td>
+		</tr>
+		<tr>
+			<th></th>
+			<td><input type="submit" value="下载"></td>
+		</tr>
+	</table>
+</form>
+
+
+</body>
+</html>
