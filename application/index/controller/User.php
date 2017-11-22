@@ -11,17 +11,18 @@ class User extends controller{
 	}
 
 	public function doLogin(){
-		$uname = input('post.uname');
+
+		$username = input('post.uname');
 		$password = input('post.passworld');
 		$userM = new User;
-		$user = $userM->login($uname, $password);
+        $user = $userM->login($username, $password);
 		if($user){
 			Session::set('uid', $user['uid']);
-			Session::set('uname', $user['uname']);
-			$this->success('登陆成功');
+            Session::set('uname', $user['uname'])
+            $this->success("登录成功"，'index/index/index');
 		}else{
-			$this->error('登陆失败');
-		}
+            $this->error("账号密码错误"， 'index/user/login');
+        }
 
 	}
 

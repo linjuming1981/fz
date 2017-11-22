@@ -11,5 +11,12 @@ class User extends Model{
 		if($user) return $user;
 		return false;
 	}
+	
+	public function getUser($uid){
+		$user = $this->where('uid',$uid)->find();
+		return $user;
+	}
+	
+	
 
 }
