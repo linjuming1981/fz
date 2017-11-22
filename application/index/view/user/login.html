@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>用户登录</title>
-    <link rel="stylesheet" href="__CSS__/index_user.css">
-    <script src="__JS__/jquery.js"></script>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="__CSS__/global.css">
+	<link rel="stylesheet" href="__CSS__/index_user.css">
+	<script src="__JS__/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-    
-    <form action="{:U('index/user/doLogin')}">
-        <table>
-            <tr>
-                <th>用户名</th>
-                <td>
-                    <input type="text" name="uname">
-                </td>
-            </tr>
-             <tr>
-                <th>密码</th>
-                <td>
-                    <input type="text" name="password">
-                </td>
-            </tr>
-            <tr>
-                <th></th>
-                <td>
-                    <input type="submit" value="登录">
-                </td>
-            </tr>
-        </table>
-    </form>
-    
-    
+	
+	<form method="post" action="{:url('index/user/doLogin')}">
+		<table class="login_table">
+			<tr>
+				<th>用户名</th>
+				<td>
+					<input type="text" name="uname">
+				</td>
+			</tr>
+			 <tr>
+				<th>密码</th>
+				<td>
+					<input type="password" name="password">
+				</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td>
+					<input type="submit" value="登录">
+					<a class="link" href="{:url('index/user/register')}">注册</a>
+
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	
 </body>
 </html>
