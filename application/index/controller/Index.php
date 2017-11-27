@@ -17,7 +17,18 @@ class Index extends Controller{
 
 	// http://localhost/fz/public/index/index/downPage
 	public function downPage(){
-		if()
+		$his_id = input('his_id');
+		$his_detail = [];
+		if($his_id){
+			$hisM = new \app\index\model\PageDownHistory;
+			$his_detail = $hisM->get($his_id);
+		}
+		if($his_detail['uid'] !== Session::get('uid')){
+			return 'you are not the page owner!';
+		}
+
+		$this->assign('his_id', $his_id);
+		$this->assign('his_detail', $his_detail);
 		return $this->fetch();
 	}
 
