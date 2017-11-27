@@ -17,6 +17,7 @@ class Index extends Controller{
 
 	// http://localhost/fz/public/index/index/downPage
 	public function downPage(){
+		if()
 		return $this->fetch();
 	}
 

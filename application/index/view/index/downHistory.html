@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>下载历史</title>
+	<meta charset="UTF-8">
+	<title>下载历史</title>
 </head>
 <body>
 
 <ul class="history_list">
-  <?php 
-    foreach($history_list as $k=>$v){
-  ?>
-  <li>
-    <a href="{:url('index/index/downDetail',['id'=>$v['id']])}" target="_blank">{$v['url']}</a>
-  </li>
-  <?php
-    }
-  ?>
+	<?php 
+		foreach($history_list as $k=>$v){
+	?>
+	<li>
+		<a href="{:url('index/index/downDetail',['id'=>$v['id']])}" target="_blank">{$v['url']}</a>
+	</li>
+	<?php
+		}
+	?>
 </ul>
 
-  
-  
+	
+	
 </body>
 </html>
