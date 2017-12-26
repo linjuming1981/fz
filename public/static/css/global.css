@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 20px;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+a {
+}
+a:hover {
+}
+p {
+}
+form {
+}
+table {
+    border-collapse: collapse;
+}
+.row {
+}
+.form_table {
+}
+.form_table th, .form_table td {
+    border: 1px solid #6f6f6f;
+    padding: 5px;
+}
+.form_table th {
+    background-color: #dcf0ff;
+    font-weight: normal;
+}
+.form_table td {
+}
+.form_table caption {
+}
+.form_table input[type="text"], .form_table textarea {
+    padding: 2px 5px;
+    width: 300px;
+}
+.form_table input[type="text"] {
+}
+.form_table textarea {
+}
+.form_table input[type="submit"] {
+}
